@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+/* grid-area: row-start / column-start / row-end / column-end; */
 body {
     background: linear-gradient(to bottom, #eee, #fff);
     background-attachment: fixed;
@@ -13,16 +14,28 @@ body {
 header {
     background-color: #003058;
     color: #ffffff;
+    grid-row: 1/2;
+    grid-column: 2/-2;
 }
 
 main {
     padding-left: 2rem;
     padding-right: 2rem;
+    grid-row: 4/5;
+    grid-column: 2/-2;
+}
 
+main img {
+    float: right;
+    padding-left: 2rem;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
 }
 
 header h1 {
-    color: #fff;
     line-height: 140%;
     padding: 0.5rem;
     background-image: url('utahtechimages/utahtechlogo.svg');
@@ -30,18 +43,40 @@ header h1 {
     background-repeat: no-repeat;
     padding-left: 1em;
     background-origin: content-box;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 nav {
     font-weight: bold;
-    background-color: #f3f3f3;
-    padding: 0.5rem 0.5rem 0.5rem 2rem;
+    background-color: #424242;
+    position: sticky;
+    top: 0;
+    grid-row: 2/3;
+    grid-column: 2/-2;
 }
 
-nav,
-a {
+nav a {
     text-decoration: none;
+    color: #fff;
+    padding: 1rem 0rem;
+    display: block;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #BA1C21;
+}
+
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-flow: nowrap;
+    list-style-type: none;
+}
+
+nav ul li {
+    width: 100%
 }
 
 h2 {
@@ -68,6 +103,8 @@ footer {
     font-style: italic;
     text-align: center;
     padding: 1rem;
+    grid-row: 5/6;
+    grid-column: 2/-2;
 }
 
 #homehero {
@@ -76,6 +113,8 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    grid-row: 3/4;
+    grid-column: 2/-2;
 }
 
 #studenthero {
@@ -84,6 +123,8 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    grid-row: 3/4;
+    grid-column: 2/-2;
 }
 
 #facultyhero {
@@ -92,14 +133,12 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    grid-row: 3/4;
+    grid-column: 2/-2;
 }
 
 #wrapper {
-    background-color: #fff;
-    width: 80%;
-    min-width: 960px;
-    max-width: 2048px;
-    box-shadow: 0px 3px 3px rgba(66, 66, 66, 0.3);
-    margin-right: auto;
-    margin-left: auto;
+    display: grid;
+    grid-auto-rows: minmax(0px, auto);
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
 }
