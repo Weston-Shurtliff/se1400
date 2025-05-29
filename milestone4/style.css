@@ -1,0 +1,78 @@
+body {
+    background: linear-gradient(to bottom, #CAF0F8, #fff);
+    background-attachment: fixed;
+    color: #0096C7;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0%;
+}
+
+header {
+    background-color: #0077B6;
+    color: #fff;
+    text-align: center;
+    font-size: larger;
+    grid-row: 1/2;
+    grid-column: 2/-2;
+}
+
+main {
+
+    background-color: #CAF0F8;
+    grid-row: 3/4;
+    grid-column: 2/-2;
+}
+
+
+nav {
+    font-weight: bold;
+    background-color: #90E0EF;
+    position: sticky;
+    top: 0;
+    grid-row: 2/3;
+    grid-column: 2/-2;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem 0rem;
+    display: block;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #023E8A;
+}
+
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-flow: nowrap;
+    list-style-type: none;
+}
+
+nav ul li {
+    width: 100%
+}
+
+
+
+footer {
+    font-size: .70rem;
+    font-style: italic;
+    text-align: center;
+    background-color: #90E0EF;
+    grid-row: 4/5;
+    grid-column: 2/-2;
+}
+
+h6 {
+    margin: 5px;
+}
+
+#wrapper {
+    display: grid;
+    grid-auto-rows: 100px 50px 1fr auto;
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+}
