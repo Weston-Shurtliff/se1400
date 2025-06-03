@@ -19,6 +19,7 @@ header {
 }
 
 main {
+    background-color: #ffffff;
     padding-left: 2rem;
     padding-right: 2rem;
     grid-row: 4/5;
