@@ -99,6 +99,22 @@ dt {
     color: #ba1c21;
 }
 
+form {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 200px 1fr;
+    gap: 0.75rem;
+    width: 100%;
+}
+
+input, textarea {
+    font-size: 1rem;
+    padding: 10px;
+    color: #666666;
+    background-color: #fafafa;
+    border: none;
+}
+
 footer {
     font-size: .70rem;
     font-style: italic;
