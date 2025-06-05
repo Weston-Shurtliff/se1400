@@ -18,6 +18,21 @@ header {
     grid-column: 2/-2;
 }
 
+:focus {
+    outline: none;
+    background-color: #f0f0f0;
+}
+
+label {
+    padding: 10px;
+    text-align: right;
+}
+
+#mySubmit {
+    width: 10rem;
+    grid-column: 2/3;
+}
+
 main {
     background-color: #ffffff;
     padding-left: 2rem;
@@ -107,7 +122,8 @@ form {
     width: 100%;
 }
 
-input, textarea {
+input,
+textarea {
     font-size: 1rem;
     padding: 10px;
     color: #666666;
@@ -147,6 +163,16 @@ footer {
 #facultyhero {
     height: 300px;
     background-image: url('utahtechimages/facultyhero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-row: 3/4;
+    grid-column: 2/-2;
+}
+
+#alumnihero {
+    height: 300px;
+    background-image: url('utahtechimages/alumnihero.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
