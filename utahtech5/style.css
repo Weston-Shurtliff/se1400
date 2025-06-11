@@ -12,6 +12,7 @@ body {
 }
 
 header {
+    
     background-color: #003058;
     color: #ffffff;
     grid-row: 1/2;
@@ -37,6 +38,7 @@ header a {
 }
 
 header h1 {
+    display: grid;
     line-height: 140%;
     padding: 0.5rem;
     background-image: url('utahtechimages/utahtechlogo.svg');
@@ -114,8 +116,8 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    grid-row: 3/4;
-    grid-column: 1/-1;
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
 }
 
 #studenthero {
@@ -161,15 +163,43 @@ footer {
     #wrapper {
         grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 150px)) minmax(0px, 1fr);
     }
+}
+
+@media screen and (max-width: 900px) {
 
     nav {
-        grid-row: 2/3;
-        grid-column: 1/5;
+        grid-row: 2 / 3;
+        grid-column: 1 / 5;
         position: static;
     }
 
     nav ul {
         flex-flow: column nowrap;
+    }
+
+    #homehero {
+        grid-row: 2 / 3;
+        grid-column: 5 / 8;
+        height: auto;
+    }
+
+    #facultyhero {
+        grid-row: 2 / 3;
+        grid-column: 5 / 8;
+        height: auto;
+    }
+
+    #studenthero {
+        grid-row: 2 / 3;
+        grid-column: 5 / 8;
+        height: auto;
+    }
+
+    main img {
+        float: none;
+        width: 100%;
+        height: auto;
+        padding-left: 0%;
     }
 }
 
