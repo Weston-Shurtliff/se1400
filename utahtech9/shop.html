@@ -9,6 +9,7 @@
 </head>
 
 <body>
+
   <div id="wrapper">
     <div id="bluebar"></div>
     <div id="greybar"></div>
@@ -26,9 +27,32 @@
         <li><a href="shop.html">Shop</a></li>
       </ul>
     </nav>
-    <div id="homehero"></div>
+    <div id="alumnihero"></div>
     <main>
-      
+      <h2>Join Alumni Mailing List</h2>
+      <h3>Request Alumni Newsletter</h3>
+      <p>Required information is marked with an asterisk (*).</p>
+      <form action="https://kearl.net/se1400/mail.php" method="post" name="Form">
+        <label for="myFName">First Name:</label>
+        <input type="text" name="myFName" id="myFName" required>
+        <label for="myLName">Last Name:</label>
+        <input type="text" name="myLName" id="myLName"required>
+        <label for="myEmail">Email:</label>
+        <input type="text" name="myEmail" id="myEmail" type="email" required>
+        <label for="myPhone">Phone:</label>
+        <input type="text" name="myPhone" id="myPhone" type="tel">
+        <label for="Graduation">Graduation Date:</label>
+        <input type="date" name="Graduation" id="Graduation">
+        <label for="myComments">Comments:</label>
+        <textarea name="myComments" id="myComments" rows="2" cols="20" required ></textarea>
+        <input type="submit" name="mySubmit" id="mySubmit">
+      </form>
+      <div>
+        Utah Tech University<br>
+        225 S 700 E<br>
+        St George, UT 84770<br><br>
+        (435) 652-7500<br><br>
+      </div>
     </main>
     <footer>
       Copyright &copy; 2025 Utah Tech University<br>
