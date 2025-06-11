@@ -170,6 +170,16 @@ footer {
     text-align: left;
 }
 
+#shoppingcart img {
+    width: 100%;
+    height: auto;
+}
+
+#shoppingcart {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 #homehero {
     height: 300px;
     background-image: url('utahtechimages/homehero.jpg');
@@ -340,3 +350,15 @@ footer {
         display: none;
     }
 } 
+
+@media (max-width: 900px) {
+    #shoppingcart {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    #shoppingcart {
+        grid-template-columns: 1fr;
+    }
+}
