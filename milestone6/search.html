@@ -19,15 +19,18 @@
                 <li><a href="search.html">Search</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <form action="#" id="search"></form>
+            
         </nav>
         <main>
-            <form action="#">
-                <label for="search">Author or Book Name:</label>
-                <input type="text" name="search" id="search" required>
-                <input type="submit" name="search" id="search" value="Search">
+            <form id="searchForm" action="#">
+              <label for="searchInput">Author or Book Name:</label>
+              <input type="text" name="search" id="searchInput" required />
+              <input type="submit" value="Search" />
             </form>
+
+            <ul id="Book"></ul>
         </main>
+        <script src="script.js"></script>
         <footer>
             <h6>Copyright &copy; 2025</h6>
         </footer>

@@ -21,7 +21,17 @@
             </ul>
         </nav>
         <main>
-
+            <form method="post" onsubmit="return validateForm();" action="index.html">
+        <label for="myFName">First Name:</label>
+        <input type="text" name="myFName" id="myFName" ><br>
+        <label for="myLName">last Name:</label>&nbsp;
+        <input type="text" name="myLName" id="myLName"><br>
+        <label for="myEmail">Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="myEmail" id="myEmail" type="email" required><br>
+        <label for="myComments">Complaints:</label>
+        <textarea name="complaints" id="complaints" rows="2" cols="20"  ></textarea>
+        <input type="submit" name="mySubmit" id="mySubmit">
+      </form>
         </main>
         <footer>
             <h6>Copyright &copy; 2025</h6>

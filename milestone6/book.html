@@ -21,16 +21,20 @@
             </ul>
         </nav>
         <main>
+            <form action="#" method="post" id="Form">
+    <label for="title">Book Title:</label>
+    <input type="text" name="title" id="title" placeholder="Ex: Elantris" required />
 
-        <form action="#" method="post" name="Form" id="Form">
-            <label for="name">Book Name:</label>
-            <input type="text" name="name" id="name" required>
-            <input type="submit" name="search" id="search" value="Add Book">
-        </form>
-        <ul id="myList">
-            
-</ul>
+    <label for="author">Author:</label>
+    <input type="text" name="author" id="author" placeholder="Ex: Brandon Sanderson" required />
 
+    <label for="year">Year:</label>
+    <input type="number" name="year" id="year" placeholder="Ex: 2005" required />
+
+    <input type="submit" value="Add Book" />
+  </form>
+            <ul id="Book"></ul>
+            <script src="script.js"></script>
         </main>
         <footer>
             <h6>Copyright &copy; 2025</h6>
