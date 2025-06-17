@@ -74,12 +74,15 @@ nav ul li {
     border-radius: 10px;
 }
 
-
-
-
-
 p {
     margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h3 {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 main img {
@@ -108,7 +111,7 @@ form {
     margin: 20px auto;
     padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #f9f9f9;
 }
 label {
@@ -126,7 +129,7 @@ input[type="text"], input[type="email"], input[type="number"], textarea {
 }
 
 button {
-    background-color: #ff474c;
+    background-color: #fd6368;
     color: #000;
     border: none;
     border-radius: 8px;
@@ -144,6 +147,7 @@ main ul {
 main ul li {
     font-size: larger;
     list-style: none;
+    margin-right: 50px;
 }
 
 main ul li p {
